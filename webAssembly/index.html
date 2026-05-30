@@ -1,0 +1,93 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Procesamiento de Imágenes con WebAssembly</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .contenedor {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        canvas {
+            margin-top: 20px;
+            max-width: 100%;
+            border: 1px solid #000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>
+            Procesamiento de Imágenes con WebAssembly
+        </h1>
+
+        <p>
+            Este proyecto utiliza WebAssembly (WASM) y C++
+            para procesar imágenes dentro del navegador.
+        </p>
+
+        <p>
+            Al seleccionar una imagen, los píxeles son
+            enviados a un módulo WebAssembly donde se
+            aplica un filtro de escala de grises.
+        </p>
+
+        <p>
+            Tecnologías utilizadas:
+        </p>
+
+        <ul>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Emscripten</li>
+            <li>WebAssembly</li>
+        </ul>
+
+        <hr>
+
+        <label>
+            Seleccionar imagen:
+        </label>
+
+        <br><br>
+
+        <input
+            type="file"
+            id="file"
+            accept="image/png,image/jpeg,image/jpg">
+
+        <br><br>
+
+        <canvas id="canvas"></canvas>
+
+    </div>
+
+    <script src="image_processor.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+```
