@@ -1,0 +1,43 @@
+/build/
+/server/build/
+/uploads/
+/server/uploads/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.log
+*.tmp
+*.user
+.vscode/
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.idea/
+*.suo
+*.swp
+
+# OS generated
+desktop.ini
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Python (if any)
+__pycache__/
+*.pyc
+
+# Node (if any)
+node_modules/
+
+# Ignore local secret files
+.env
+
+# Keep this file tracked
+!.gitignore
