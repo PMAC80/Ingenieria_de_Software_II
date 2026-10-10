@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregación - Personaje RPG</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 { color: #38bdf8; }
+    canvas {
+      background: #1e293b;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: block;
+      margin: 20px auto;
+    }
+    .panel {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #4f46e5;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover { background: #6366f1; transform: translateY(-2px); }
+    #log {
+      margin-top: 20px;
+      padding: 15px;
+      background: #1e293b;
+      border-radius: 10px;
+      max-width: 600px;
+      margin-inline: auto;
+      text-align: left;
+      font-family: monospace;
+      font-size: 14px;
+      min-height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Agregación en TypeScript</h1>
+  <canvas id="canvas" width="700" height="400"></canvas>
+
+  <div class="panel">
+    <button data-accion="cambiarArma">🔄 Cambiar Arma</button>
+    <button data-accion="cambiarHabilidad">✨ Cambiar Habilidad</button>
+    <button data-accion="atacar">⚔️ Atacar</button>
+    <button data-accion="usarHabilidad">🌟 Usar Habilidad</button>
+    <button data-accion="recibirDanio">💥 Recibir Daño</button>
+  </div>
+
+  <div id="log">Presiona un botón para comenzar...</div>
+
+  <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
